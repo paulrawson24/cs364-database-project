@@ -53,4 +53,3 @@ The relational database models a single NFL season using the following entities:
 - Fill in Entities.py class with various needed attributes and functions
 - Figure out why we don't have access to create database in MySQL Workbench?
 - Do various other methods needed in database.py
->>>>>>> a86a46e (Created various required classes and some outline of what we need to do. Also updated README with TODO's for this week)
