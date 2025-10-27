@@ -41,3 +41,16 @@ The relational database models a single NFL season using the following entities:
 - **Version Control:** GitHub (shared repository)  
 - **Diagram Tool:** Canva (for ER diagram creation)  
 - **Data Source:** 2024 NFL season statistics (from ESPN)
+<<<<<<< HEAD
+=======
+
+## TODO's (Week of October 27th)
+### Trent
+- Make initial outline of user interface
+- Start work on nfl_season class (main function)
+- work on connect() and disconnect() methods in database.py
+### Paul
+- Fill in Entities.py class with various needed attributes and functions
+- Figure out why we don't have access to create database in MySQL Workbench?
+- Do various other methods needed in database.py
+>>>>>>> a86a46e (Created various required classes and some outline of what we need to do. Also updated README with TODO's for this week)
