@@ -41,7 +41,3 @@ The relational database models a single NFL season using the following entities:
 - **Version Control:** GitHub (shared repository)  
 - **Diagram Tool:** Canva (for ER diagram creation)  
 - **Data Source:** 2024 NFL season statistics (from ESPN)
-
-## This week to do
-- **Paul:**
-- **Trent:** 
