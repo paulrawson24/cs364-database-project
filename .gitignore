@@ -1,3 +1,37 @@
-    .DS_Store
+# macOS system files
 .DS_Store
-.DS_Store
+
+# Python cache and build files
+__pycache__/
+*/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# VS Code settings
+.vscode/
+.code-workspace
+
+# PyCharm / JetBrains (if you ever use it)
+.idea/
+
+# Database / local data files (optional, depending on your project)
+*.db
+*.sqlite3
+
+# Backup or temporary files
+*.bak
+*.swp
+*.tmp
+*.old
+
+# OS-specific trash folders
+Thumbs.db
+Desktop.ini
