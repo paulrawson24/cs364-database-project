@@ -62,6 +62,11 @@ class Database:
     # connect() - done 
     # disconnect() - done
     # runquery()
-    # other various methods
+
+    # some various methods that we may need also:
+    # def get_players():
+    # def insert_player(data):
+    # def update_player(player_id, data):
+    # def delete_player(player_id):
 
     # work off template provided in java
