@@ -28,7 +28,7 @@ class Database:
     def __init__ (self):
         self.url = "138.49.184.123"
         self.port = "3306"
-        self.dbName = "davis3274_a4" # change as needed in accordance with our actual database name
+        self.dbName = "rawson7711_nflDbProject"
         self.username = "davis3274" # change as needed
         self.password = "" # blank for now until we start testing
         self.connection = None # we're not connecting yet
