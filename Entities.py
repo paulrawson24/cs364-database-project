@@ -67,7 +67,7 @@ class PlayerStat:
         self.stat_id = stat_id
 
     def __str__(self):
-        return f"(Week {self.week}){self.player_name} ({self.team}) : Recieving - {self.receptions} receptions for {self.recieving_yards} yards and {self.recieving_tds} TDs. Rushing - {self.rushing_yards} yards and {self.rushing_tds} TDs. Passing - {self.completions}/{self.attempts} for {self.passing_yards} yards and {self.passing_tds} TDs and {self.passing_interceptions} INTs.  "
+        return f"(Week {self.week}){self.player_name} ({self.team}) : Recieving - {self.receptions} receptions for {self.recieving_yards} yards and {self.recieving_tds} TDs. Rushing - {self.rushing_yards} yards and {self.rushing_tds} TDs. Passing - {self.completions}/{self.attempts} for {self.passing_yards} yards and {self.passing_tds} TDs and {self.passing_interceptions} INTs. Defsensive Stats: {self.def_sacks} Sacks and {self.def_interceptions} INTs"
                                                                       
 # SeasonSummary Entity
 class SeasonSummary:
