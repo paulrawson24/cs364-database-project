@@ -71,7 +71,59 @@ class Database:
 
     # work off template provided in java
 
+    # -------------------------
+    # teams operations
+    # -------------------------
 
+    # Insert: add a new team record to teams table
+    # Read: retrieve all teams
+    # Update: Modify an existing teams details like name/division
+    # Delele: Remove a team record from db
+
+    # -------------------------
+    # Players table operations
+    # -------------------------
+
+    # Insert: add a new player w attributes like name, position, etc.
+    # Read: get all players or players by team
+    # update: edit player info
+    # Delete: Remove a player from the db
+
+    # -------------------------
+    # Games table operations
+    # -------------------------
+
+    # Insert: create a new game entry with week, date, and teams
+    # Read: retrieve all games or filter by week/date
+    # Update: update game scores, etc.
+    # Delete: delete a specific game entry
+
+    # -------------------------
+    # Player Stats table operations
+    # -------------------------
+
+    # Insert: add player stats for given game
+    # Read: retrieve all player stats or for specfic player/game
+    # Update: Modify stat values (yards, tds, etc.)
+    # Delete: Remove a players stat record
+
+    # -------------------------
+    # Season summary table operations
+    # -------------------------
+
+    # Read: generate aggregated season summaries per team
+
+    # -------------------------
+    # Advanced Queries
+    # -------------------------
+
+    # calculate average passing/rushing/recieving yards per game for a player
+    # get top players by a certain stat like TDs
+    # calculate win-loss differentials by division
+    # compare home vs away performance metrics
+    # Identify teams w/ highest offensive efficiency
+
+ 
 
 # to test db connection
 if __name__ == "__main__":
