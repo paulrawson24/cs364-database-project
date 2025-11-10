@@ -2,7 +2,7 @@
 # Date: 10/28/2025
 
 import mysql.connector
-from mysql.connector import Error
+from mysql.connector import Error as e
 
 class Database:
 
@@ -29,13 +29,8 @@ class Database:
         self.url = "138.49.184.123"
         self.port = "3306"
         self.dbName = "rawson7711_nflDbProject"
-<<<<<<< HEAD
         self.username = "rawson7711" # Using Pauls username and password
         self.password = "!kcj9qQ6LNVD3nEzm"
-=======
-        self.username = "davis3274" # change as needed
-        self.password = "" # blank for now until we start testing
->>>>>>> origin/main
         self.connection = None # we're not connecting yet
         # might have to add a cursor object for running queries?
 
@@ -127,26 +122,3 @@ class Database:
     # calculate win-loss differentials by division
     # compare home vs away performance metrics
     # Identify teams w/ highest offensive efficiency
-
- 
-
-# to test db connection
-if __name__ == "__main__":
-    print("Attempting to connect to database...")
-    db = Database()
-    conn = db.connect()
-
-    if conn:
-        print("Connection test successful!")
-        try:
-            cursor = conn.cursor()
-            cursor.execute("SHOW DATABASES;")
-            print("\nDatabases visible to this user:")
-            for (name,) in cursor.fetchall():
-                print(f" - {name}")
-            cursor.close()
-        except Exception as err:
-            print(f"Error running test query: {err}")
-        db.disconnect()
-    else:
-        print("Connection test failed.")
