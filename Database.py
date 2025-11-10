@@ -29,8 +29,13 @@ class Database:
         self.url = "138.49.184.123"
         self.port = "3306"
         self.dbName = "rawson7711_nflDbProject"
+<<<<<<< HEAD
         self.username = "rawson7711" # Using Pauls username and password
         self.password = "!kcj9qQ6LNVD3nEzm"
+=======
+        self.username = "davis3274" # change as needed
+        self.password = "" # blank for now until we start testing
+>>>>>>> origin/main
         self.connection = None # we're not connecting yet
         # might have to add a cursor object for running queries?
 
