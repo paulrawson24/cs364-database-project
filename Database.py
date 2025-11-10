@@ -1,8 +1,8 @@
-# @Author Trent Davis
+# @Author Trent Davis & Paul Rawson
 # Date: 10/28/2025
 
 import mysql.connector
-from mysql.connector import Error as e
+from mysql.connector import Error
 
 class Database:
 
@@ -28,9 +28,9 @@ class Database:
     def __init__ (self):
         self.url = "138.49.184.123"
         self.port = "3306"
-        self.dbName = "davis3274_a4" # change as needed in accordance with our actual database name
-        self.username = "davis3274" # change as needed
-        self.password = "" # blank for now until we start testing
+        self.dbName = "rawson7711_nflDbProject"
+        self.username = "rawson7711" # Using Pauls username and password
+        self.password = "!kcj9qQ6LNVD3nEzm"
         self.connection = None # we're not connecting yet
         # might have to add a cursor object for running queries?
 
@@ -70,3 +70,26 @@ class Database:
     # def delete_player(player_id):
 
     # work off template provided in java
+
+
+
+# to test db connection
+if __name__ == "__main__":
+    print("Attempting to connect to database...")
+    db = Database()
+    conn = db.connect()
+
+    if conn:
+        print("Connection test successful!")
+        try:
+            cursor = conn.cursor()
+            cursor.execute("SHOW DATABASES;")
+            print("\nDatabases visible to this user:")
+            for (name,) in cursor.fetchall():
+                print(f" - {name}")
+            cursor.close()
+        except Exception as err:
+            print(f"Error running test query: {err}")
+        db.disconnect()
+    else:
+        print("Connection test failed.")
