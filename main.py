@@ -1,7 +1,7 @@
 # This file is where we will run the main method for our NFL Analytics Dashboard
 # The 'UI Manager'
 # @Author Trent Davis & Paul Rawson
-# Date: 10/29/2025
+# Date: 11/12/2025
 import tkinter as tk
 from tkinter import ttk
 
@@ -28,16 +28,35 @@ class NFLDashboardApp(tk.Tk):
         style.configure("TButton", font=("Helvetica", 10))
         style.configure("TLabel", font=("Helvetica", 10))
 
-        # Continue below later
+        # ==== Title Label ====
+        title_label = ttk.Label(
+            self,
+            text="NFL Analytics Dashboard (2024 Season)",
+            font=("Helvetica", 18, "bold")
+        )
+        title_label.pack(pady=15)
 
+        # ==== Notebook Setup ====
+        notebook = ttk.Notebook(self)
+        notebook.pack(fill="both", expand=True)
 
+        # ==== Create Tab Instances ====
+        self.players_tab = PlayersTab(notebook)
+        self.teams_tab = TeamsTab(notebook)
+        self.games_tab = GamesTab(notebook)
+        self.stats_tab = StatsTab(notebook)
+        self.queries_tab = QueriesTab(notebook)
 
-# leave this for later
+        # ==== Add Tabs to Notebook ====
+        notebook.add(self.players_tab, text="Players")
+        notebook.add(self.teams_tab, text="Teams")
+        notebook.add(self.games_tab, text="Games")
+        notebook.add(self.stats_tab, text="Player Stats")
+        notebook.add(self.queries_tab, text="Advanced Queries")
+
 def main():
-    pass
-
-
-
+    app = NFLDashboardApp()
+    app.mainloop()
 
 
 if __name__ == "__main__":
